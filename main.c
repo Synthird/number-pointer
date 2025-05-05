@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
 	double number = 0;
 
 	printf("Please enter a number: ");
