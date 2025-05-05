@@ -2,8 +2,7 @@
 
 void displayNumber(double *number);
 
-int main()
-{
+int main() {
 	double firstNumber = 0;
 	double secondNumber = 0;
 
@@ -19,7 +18,6 @@ int main()
 	return 0;
 }
 
-void displayNumber(double *number)
-{
+void displayNumber(double *number) {
 	printf("%lf at memory location %p\n", (*number), *number);
 }
