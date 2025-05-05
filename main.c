@@ -1,13 +1,25 @@
 #include <stdio.h>
 
+void displayNumber(double *number);
+
 int main()
 {
-	double number = 0;
+	double firstNumber = 0;
+	double secondNumber = 0;
 
 	printf("Please enter a number: ");
-	scanf("%lf", &number);
+	scanf("%lf", &firstNumber);
 
-	printf("Your number %lf is at memory location %p", number, &number);
+	printf("Please enter another number: ");
+	scanf("%lf", &secondNumber);
+
+	displayNumber(&firstNumber);
+	displayNumber(&secondNumber);
 
 	return 0;
+}
+
+void displayNumber(double *number)
+{
+	printf("%lf at memory location %p\n", (*number), *number);
 }
